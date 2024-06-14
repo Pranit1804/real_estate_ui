@@ -14,6 +14,7 @@ dependencies:
   flutter_svg: ^2.0.9
   intl: ^0.18.1
   clipboard: ^0.1.3
+  flutter_staggered_grid_view: ^0.7.0
 
 dev_dependencies:
   flutter_test:
@@ -29,34 +30,34 @@ flutter:
   assets:
     - assets/
     - assets/svg/
-    - assets/gif/
+    - assets/images/
 
   fonts:
     - family: RedHatText
       fonts:
-        - asset: assets/font/RedHatText-Bold.ttf
+        - asset: assets/fonts/RedHatText-Bold.ttf
           weight: 700
-        - asset: assets/font/RedHatText-BoldItalic.ttf
+        - asset: assets/fonts/RedHatText-BoldItalic.ttf
           style: italic
           weight: 700
-        - asset: assets/font/RedHatText-SemiBold.ttf
+        - asset: assets/fonts/RedHatText-SemiBold.ttf
           weight: 600
-        - asset: assets/font/RedHatText-Medium.ttf
+        - asset: assets/fonts/RedHatText-Medium.ttf
           weight: 500
-        - asset: assets/font/RedHatText-Regular.ttf
+        - asset: assets/fonts/RedHatText-Regular.ttf
           weight: 400
-        - asset: assets/font/RedHatText-Light.ttf
+        - asset: assets/fonts/RedHatText-Light.ttf
           weight: 300
 
     - family: BarlowCondensed
       fonts:
-        - asset: assets/font/BarlowCondensed-Bold.ttf
+        - asset: assets/fonts/BarlowCondensed-Bold.ttf
           weight: 700
-        - asset: assets/font/BarlowCondensed-SemiBold.ttf
+        - asset: assets/fonts/BarlowCondensed-SemiBold.ttf
           weight: 600
-        - asset: assets/font/BarlowCondensed-Medium.ttf
+        - asset: assets/fonts/BarlowCondensed-Medium.ttf
           weight: 500
-        - asset: assets/font/BarlowCondensed-Regular.ttf
+        - asset: assets/fonts/BarlowCondensed-Regular.ttf
           weight: 400
-        - asset: assets/font/BarlowCondensed-Light.ttf
+        - asset: assets/fonts/BarlowCondensed-Light.ttf
           weight: 300
