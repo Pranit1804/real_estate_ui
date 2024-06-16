@@ -25,7 +25,7 @@ abstract class AppTextTheme {
   static final TextStyle display3XLSB = TextStyle(
     fontSize: 44.sp,
     fontFamily: AppTextTheme.barlowCondensed,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w500,
   );
 
   static final TextStyle display3XLR = TextStyle(

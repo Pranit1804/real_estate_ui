@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:real_estate_ui/common/constants/app_constants.dart';
-
 import 'package:real_estate_ui/common/utils/app_utils.dart';
 import 'package:real_estate_ui/common/utils/screen_utils.dart';
 import 'package:real_estate_ui/global_navigator.dart';
@@ -60,12 +59,12 @@ class _AppState extends State<App> {
       themeMode: _themeMode,
       routes: Routes.getAll(),
       onGenerateRoute: Routes.generateRoute,
-      initialRoute: RoutesConstants.splashScreen,
+      initialRoute: RoutesConstants.dashboard,
     );
   }
 
   Widget _appBuilder(BuildContext context, Widget widget) {
-    final Widget appWidget = SafeArea(child: widget);
+    final Widget appWidget = widget;
 
     return appWidget;
   }

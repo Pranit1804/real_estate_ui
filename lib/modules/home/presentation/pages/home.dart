@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:real_estate_ui/common/constants/layout_constants.dart';
+import 'package:real_estate_ui/common/extensions/screen_utils_extensions.dart';
 import 'package:real_estate_ui/common/theme/new_theme/color_theme/default_color_themes.dart';
 import 'package:real_estate_ui/modules/home/presentation/widgets/estate_list_widget.dart';
 import 'package:real_estate_ui/modules/home/presentation/widgets/home_header.dart';
@@ -20,6 +22,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        padding: EdgeInsets.only(top: LayoutConstants.dimen_24.h),
         decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [AppColor.white, AppColor.primaryColor],

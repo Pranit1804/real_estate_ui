@@ -29,10 +29,10 @@ class SingleEstateTile extends StatelessWidget {
           ),
         ),
         Container(
-            padding: const EdgeInsets.all(10),
-            alignment: Alignment.bottomLeft,
-            child:
-                NeumorphicSlideButton(address: address, alignment: alignment)),
+          padding: const EdgeInsets.all(10),
+          alignment: Alignment.bottomLeft,
+          child: NeumorphicSlideButton(address: address, alignment: alignment),
+        ),
       ],
     );
   }

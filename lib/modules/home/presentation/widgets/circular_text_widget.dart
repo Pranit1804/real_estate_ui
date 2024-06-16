@@ -3,6 +3,7 @@ import 'package:real_estate_ui/common/constants/layout_constants.dart';
 import 'package:real_estate_ui/common/extensions/screen_utils_extensions.dart';
 import 'package:real_estate_ui/common/theme/new_theme/color_theme/default_color_themes.dart';
 import 'package:real_estate_ui/common/theme/new_theme/text_theme/default_text_themes.dart';
+import 'package:real_estate_ui/modules/home/home_constants.dart';
 
 class CircularTextWidget extends StatefulWidget {
   const CircularTextWidget({
@@ -45,7 +46,7 @@ class _CircularTextWidgetState extends State<CircularTextWidget>
       end: widget.count,
     ).animate(_animationController);
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) async {
-      await Future.delayed(const Duration(milliseconds: 3000));
+      await Future.delayed(Duration(milliseconds: getAnimationStartTime()));
       if (mounted) {
         setState(() {
           _animateSize = true;
@@ -53,6 +54,12 @@ class _CircularTextWidgetState extends State<CircularTextWidget>
         _animationController.forward();
       }
     });
+  }
+
+  int getAnimationStartTime() {
+    return HomeConstants.homeAnimationDifference *
+            HomeConstants.widgetInfo.length +
+        400;
   }
 
   @override

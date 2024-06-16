@@ -21,7 +21,7 @@ class _EstateListingState extends State<EstateListing> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) async {
-      await Future.delayed(const Duration(milliseconds: 3500));
+      await Future.delayed(const Duration(milliseconds: 2500));
       if (mounted) {
         setState(() {
           _animateListings = true;
@@ -58,13 +58,9 @@ class _EstateListingState extends State<EstateListing> {
                             mainAxisCellCount:
                                 listing.widgetInfo.mainAxisAlignment,
                             child: SingleEstateTile(
-                              image: listing.image,
-                              address: listing.address,
-                              alignment: listing.widgetInfo.mainAxisAlignment >
-                                      listing.widgetInfo.crossAxisAligment
-                                  ? Alignment.center
-                                  : Alignment.centerLeft,
-                            ),
+                                image: listing.image,
+                                address: listing.address,
+                                alignment: Alignment.center),
                           ),
                         )
                         .toList(),
